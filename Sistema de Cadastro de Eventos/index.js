@@ -1,4 +1,10 @@
 // Algoritmo Sistema de Cadastro
 
-let de = 30;
-console.log(de);
+const de = 30;
+let da = 26;
+
+if(da < de){
+    console.log("Permitir Evento")
+} else {
+    console.log("Data invalida")
+}
