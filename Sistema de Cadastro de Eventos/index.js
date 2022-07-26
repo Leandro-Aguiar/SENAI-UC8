@@ -1,37 +1,34 @@
 // Algoritmo Sistema de Cadastro
-//de --> Data do Evento, da --> Data Atual, PA --> Quantidade de Participantes
+// da -> Data Atual, de -> Data do Evento, qp -> Quantidade de Pessoas Cadastradas no Evento
 
 const de = 30;
 let da = 26;
 let idade = 20;
-let PA = 80;
+let qp = 98;
 
-if(da < de)
+if(qp < 100)
 {
-    console.log("Evento Permitido")
+    console.log("Permitir Cadastro");
 
-    if(idade > 18) 
+    if(da < de)
     {
-        console.log("Cadastro Permitido");
+        console.log("Evento Permitido");
 
-        if(PA < 100)
+        if(idade > 18) 
         {
-            console.log("Cadastro Permitido por Quantidade de Participantes")
-        } 
-        
-        else
-        {
-            console.log("Quantidade de Participantes Excedida")
+            console.log("Cadastro Permitido");
         }
-
-    }
+        else 
+        {
+            console.log("Idade não Permitida");
+        }
+    }  
     else 
     {
-        console.log("Idade não Permitida");
+        console.log("Data invalida") ;
     }
-
-} 
+}
 else 
 {
-    console.log("Data invalida")
+    console.log("Limite de Cadastro Excedido");
 }
